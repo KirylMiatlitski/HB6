@@ -1,12 +1,12 @@
 package by.epam.course.basic.main;
 
-public class Literature�ollection {
+public class LiteratureÑollection {
 	
 	private int collectionSize = 0;
 	private LiteratureWork[] collection;
 	private String type;
 	
-	public Literature�ollection(String type) {
+	public LiteratureÑollection(String type) {
 		this.type=type;
 	}
 	
@@ -36,7 +36,8 @@ public class Literature�ollection {
 	
 	public boolean existInCollection(LiteratureWork work){
 		for (int i = 0; i < collectionSize; i++){
-			if (collection[i].equals(work)){
+			if (collection[i].equals(work)){// вы изобрели колесо, внимательно изучите методы коллекций
+				// весь этот цикл можно заменить один методом, уже реализованным
 				return true;
 			}
 		}

@@ -37,7 +37,9 @@ public class Story extends LiteratureWork{
 			return false;
 		}
 		Story story = (Story) obj;
-		if (chapterCount == 0){
+		if (chapterCount == 0){// внимательно изучите свои if-ы
+			// вы сравниваете примитивный тип данных, зачем такие грабли с отдельным сравнением значения 0
+			// это же не null все-таки
 			if (story.chapterCount != 0){
 				return false;
 			}
